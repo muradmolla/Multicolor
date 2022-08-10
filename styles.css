@@ -21,7 +21,7 @@ body {
 .navbar {
     position: absolute !important;
     width: 100vw;
-    background-color: rgba(255,255,255,0.3) !important;
+    background-color: rgba(255,255,255,0.7) !important;
     height: var(--nav-height);
     padding-top: 0;
     padding-bottom:0;
@@ -113,6 +113,15 @@ body {
     background: var(--color-5);
 }
 
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
 /* section 1 */
 
 .cards__wrapper .card{
@@ -122,6 +131,10 @@ body {
 .cards__wrapper .card > img {
     width: 100%;
     opacity: 0.6;
+}
+
+.cards__wrapper .card:hover > img {
+    opacity: 0.3;
 }
 
 .cards__wrapper .card .card__hover {
