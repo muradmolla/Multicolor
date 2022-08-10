@@ -26,6 +26,44 @@ body {
     padding-top: 0;
     padding-bottom:0;
     z-index: 3;
+
+}
+.navbar > .container-fluid {
+    position: relative;
+    height: 100%;
+}
+.navbar-nav {
+    height: 100%;
+}
+
+.navbar-collapse {
+    height: 100%;
+}
+
+.navbar-toggler {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 0px;
+        top: -50px;
+        transform: translate(0px, 50%);
+        background: rgba(255, 255, 255, 0.6);
+    }
+    .navbar > .container-fluid {
+        height: auto;
+    }
+    .navbar-nav {
+        height: auto;
+    }
+
+    .navbar-collapse {
+        height: auto;
+    }
+    
+
 }
 
 .navbar-brand {
@@ -100,9 +138,11 @@ body {
 
 .bg-2 {
     background: var(--color-2);
+    color: white;
 }
 .bg-3 {
     background: var(--color-3);
+    color: white;
 }
 .bg-4 {
     background: var(--color-4);
@@ -152,6 +192,7 @@ footer {
 .cards__wrapper .card > img {
     width: 100%;
     opacity: 0.6;
+    transition: opacity 0.5s
 }
 
 .cards__wrapper .card:hover > img {
