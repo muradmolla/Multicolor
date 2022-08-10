@@ -49,4 +49,4 @@ function resizeTabWrapper() {
 addEventListener('resize', (event) => resizeTabWrapper());
 
 window.currentTab = 0;
-changeTabTo(0);
+changeTabTo(3);
