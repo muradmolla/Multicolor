@@ -28,8 +28,6 @@ body {
     z-index: 3;
 }
 
-
-/* TODO: responsive text size */
 .navbar-brand {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -120,6 +118,29 @@ footer {
     width: 100vw;
     display: flex;
     justify-content: center;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media span {
+    display: inline-block;
+    background: rgba(255,255,255,0.7);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    transition: all 2s ease;
+}
+.social-media span:hover a {
+    color: rgb(15, 10, 222);
+}
+
+.social-media a {
+    color: rgb(0,0,0);
 }
 
 /* section 1 */

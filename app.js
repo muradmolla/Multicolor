@@ -44,7 +44,6 @@ function resizeTabWrapper() {
     const parent = document.querySelector(".slider__wrapper");
     const children = document.querySelector(".slider__wrapper > .active");
     parent.style.height = children.offsetHeight + "px";
-    console.log(children.offsetHeight);
 }
 
 addEventListener('resize', (event) => resizeTabWrapper());
