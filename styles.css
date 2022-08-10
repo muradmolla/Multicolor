@@ -1,0 +1,74 @@
+:root {
+    --nav-height: 80px;
+    --color-1: #0275d8;
+    --color-2: #ed544c;
+    --color-3: #eaa319;
+    --color-4: #16b5a3;
+    --color-5: #447fca;
+}
+
+body {
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.navbar {
+    position: absolute !important;
+    width: 100vw;
+    background-color: rgba(255,255,255,0.3) !important;
+    height: var(--nav-height);
+    padding-top: 0;
+    padding-bottom:0;
+    z-index: 3;
+}
+
+
+/* TODO: responsive text size */
+.navbar-brand {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-nav > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-1 {
+    --nav-link-color: var(--color-1);
+}
+
+.nav-2 {
+    --nav-link-color: var(--color-2);
+}
+.nav-3 {
+    --nav-link-color: var(--color-3);
+}
+.nav-4 {
+    --nav-link-color: var(--color-4);
+}
+.nav-5 {
+    --nav-link-color: var(--color-5);
+}
+
+.navbar-nav > .active, .navbar-nav > a:hover {
+    background-color: var(--nav-link-color);
+}
+
+.slider__wrapper {
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider__wrapper > section {
+    padding-top: calc(var(--nav-height) + 30px);
+    min-height: 800px;
+    width: 100vw;
+
+}
+
+.bg-1 {
+    background: var(--color-1);
+}
