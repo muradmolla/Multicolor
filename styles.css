@@ -60,15 +60,40 @@ body {
     position: absolute;
     display: flex;
     overflow: hidden;
+    width: 100vw;
 }
 
 .slider__wrapper > section {
+    position: absolute;
+    transform: translate(-100vw);
     padding-top: calc(var(--nav-height) + 30px);
     min-height: 800px;
     width: 100vw;
+    transition: transform 0.5s;
+}
 
+.slider__wrapper > .active {
+    transform: translate(0);
+}
+
+.slider__wrapper > .slide-right {
+    transform: translate(100vw);
 }
 
 .bg-1 {
     background: var(--color-1);
 }
+
+.bg-2 {
+    background: var(--color-2);
+}
+.bg-3 {
+    background: var(--color-3);
+}
+.bg-4 {
+    background: var(--color-4);
+}
+.bg-5 {
+    background: var(--color-5);
+}
+
